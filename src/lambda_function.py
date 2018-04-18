@@ -7,7 +7,7 @@ targetArn = "arn:aws:sns:us-east-1:125387665580:matt_only_sms"
 print('Loading function')
 
 def lambda_handler(event, context):
-    message = json.loads(event['body']['action'])
+    message = json.loads(event['body'])['action']
 
     body = json.loads(event['body'])
     sns = boto3.client('sns')
