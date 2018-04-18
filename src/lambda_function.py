@@ -22,6 +22,6 @@ def lambda_handler(event, context):
       return {
         'statusCode': 400,
         'headers': { 'Content-Type': 'application/json' },
-        'body': 'Failed'
+        'body': 'Failed: ' + str(err)
       }
 
