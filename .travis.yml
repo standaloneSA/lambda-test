@@ -1,4 +1,5 @@
 install:
   - pip install -r requirements.txt -t src/
 language: python
+script: publish/make-zip.sh
 
