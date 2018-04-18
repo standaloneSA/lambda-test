@@ -11,5 +11,5 @@ deploy:
   skip_cleanup: true
 after_success:
   - pip install awscli
-  - eval $(aws update-function-code --function-name mpsTestLambda1 --zip-file https://s3.amazonaws.com/mps-test-lambda1/lambda-test1.zip)
+  - eval $(aws lambda update-function-code --function-name mpsTestLambda1 --zip-file https://s3.amazonaws.com/mps-test-lambda1/lambda-test1.zip)
 
