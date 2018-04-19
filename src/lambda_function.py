@@ -9,10 +9,6 @@ print('Loading function')
 def lambda_handler(event, context):
     message = json.loads(event['body'])['action']
 
-    # Test evidence of deployment. 
-    #
-    #
-    #
     body = json.loads(event['body'])
     sns = boto3.client('sns')
     try:
